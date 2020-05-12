@@ -122,7 +122,7 @@ func copyBody(in io.ReadCloser, cpy *bytes.Buffer) io.ReadCloser {
 
 func (r *Reporter) GenDocs() error {
 
-	filename := "./DOCS.md"
+	filename := "./DOCS.txt"
 
 	f, err := os.Create(filename)
 	if err != nil {
