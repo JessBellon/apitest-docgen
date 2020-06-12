@@ -24,6 +24,7 @@ jobs:
 
     - name: Get dependencies
       run: |
+        go get -u -t -d -v ./...
         go mod vendor
 
     - name: Build
